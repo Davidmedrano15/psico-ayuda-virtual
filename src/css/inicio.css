@@ -1,0 +1,75 @@
+.inicio {
+  position: relative;
+}
+.psi__woman {
+  position: absolute;
+  top: -100px;
+  width: 400px;
+  height: 400px;
+  left: 250px;
+  z-index: -0;
+}
+.inicio__text {
+  position: absolute;
+  top: 30px;
+  width: 450px;
+  height: 200px;
+  margin-left: 650px;
+  color: #1b1b1b;
+  transition: color 10s;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px; /* Bordes redondeados */
+  box-shadow: 13 13 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  text-align: center; /* Centrar texto horizontalmente */
+  animation: fade-in 1s; /* Aplicar la animación de desvanecimiento durante 1 segundo */
+  line-height: 1.5;
+  background-image: url("../images/fondos.jpg");
+  background-size: 100%;
+  font-weight: bold;
+  padding-top: 50px;
+  text-shadow: 2px 2px 4px #eaffc2;
+  font: bold 100% cursive;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .inicio__text {
+    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    margin-left: 20px; /* Centra horizontalmente el texto */
+    left: 0; /* Cambia la posición izquierda para centrar horizontalmente */
+  }
+  .psi__woman {
+    width: 150px; /* Ajusta el ancho para pantallas de tablet */
+    height: 150px; /* Ajusta la altura para pantallas de tablet */
+  }
+}
+
+/* Media query para celulares */
+@media (max-width: 480px) {
+  .inicio__text {
+    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    margin-left: 20px;  /* Centra horizontalmente el texto */
+    left: 0; /* Cambia la posición izquierda para centrar horizontalmente */
+  }
+  .psi__woman {
+    display: none; /* Oculta el elemento para pantallas de celular si es necesario */
+  }
+}
