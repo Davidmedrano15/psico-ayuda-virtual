@@ -1,11 +1,9 @@
 /* UserServiceContent.css */
-
+/* Estilos base para todas las pantallas */
 .user-content {
-  padding: 10px;
-  width: 400px;
-  margin-left: 450px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 20px; /* Aumenta el espaciado interno */
+  width: 500px; /* Aumenta el ancho del contenedor */
+  margin: 0px auto; /* Centra el contenedor horizontalmente y agrega espacio en los márgenes superior e inferior */
   cursor: pointer;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
 }
@@ -15,38 +13,43 @@
   color: #127127;
   transition: all 0.2s;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  font: bold 100% cursive;
+  font: bold 2rem cursive; /* Ajusta el tamaño de fuente */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-bottom: 10px; /* Agrega espacio en la parte inferior */
 }
+
 .a-user {
-  width: 300px;
+  width: 400px; /* Aumenta el ancho del elemento */
   color: #1b1b1b;
   transition: color 1s;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 5px;
+  padding: 20px 10px; /* Aumenta el espaciado interno */
   border: 2px solid transparent;
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  margin-top: 50px;
-  margin-left: 670px;
+  margin-top: 60px ; /* Centra horizontalmente y agrega espacio en los márgenes superior e inferior */
+  margin-left: 500px;
   background-image: url("../images/fondos.jpg");
   text-shadow: 2px 2px 4px #eaffc2;
   transition: all 0.2s;
-  font: bold 100% cursive;
+  font: bold 2rem cursive; /* Ajusta el tamaño de fuente */
+  text-align: center; /* Centra el texto horizontalmente */
 }
 
 .a-user:hover {
-  width: 300px;
+  width: 400px;
   color: #40ff00;
   border-color: #40ff00;
   border-radius: 25px;
   user-select: text;
   cursor: pointer;
   user-select: text;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Media query para tablets */
 @media screen and (max-width: 1280px){

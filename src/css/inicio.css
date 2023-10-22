@@ -1,38 +1,45 @@
+/* Estilos base para todas las pantallas */
 .inicio {
   position: relative;
-}
-.psi__woman {
-  position: absolute;
-  top: -100px;
-  width: 400px;
-  height: 400px;
-  left: 250px;
-  z-index: -0;
-}
-.inicio__text {
-  position: absolute;
-  top: 30px;
-  width: 450px;
-  height: 200px;
-  margin-left: 650px;
-  color: #1b1b1b;
-  transition: color 10s;
-  border: 2px solid transparent;
+  height: 100vh; /* Ajusta la altura al 100% de la altura de la pantalla */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.psi__woman {
+  position: absolute;
+  top: -100px;
+  width: 500px;
+  height: 500px;
+  left: 30%; /* Centra horizontalmente en la pantalla */
+  transform: translateX(-50%); /* Centra horizontalmente en la pantalla */
+   /* Coloca la imagen detrás del contenido */
+}
+
+.inicio__text {
+  position: absolute; /* Cambia a posición relativa para que los elementos internos se posicionen correctamente */
+  left: 50%;
+  top: 10%;
+  width: 400px; /* Ajusta el ancho al 100% */ /* Establece un ancho máximo para evitar que el contenido se extienda demasiado en pantallas grandes */
+  padding: 20px; /* Añade un espaciado interno para el contenido */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Agrega un fondo semi-transparente al contenido */
+  text-align: center;
   border-radius: 25px; /* Bordes redondeados */
-  box-shadow: 13 13 10px rgba(0, 0, 0, 0.2); /* Sombra */
-  text-align: center; /* Centrar texto horizontalmente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  font: bold 2rem cursive; /* Ajusta el tamaño de fuente */
+  color: #1b1b1b;
+  text-shadow: 2px 2px 4px #eaffc2;
   animation: fade-in 1s; /* Aplicar la animación de desvanecimiento durante 1 segundo */
   line-height: 1.5;
-  background-image: url("../images/fondos.jpg");
-  background-size: 100%;
-  font-weight: bold;
-  padding-top: 50px;
-  text-shadow: 2px 2px 4px #eaffc2;
-  font: bold 100% cursive;
+ 
 }
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -77,7 +84,7 @@
   .inicio__text {
     width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
     height: auto; /* Permite que la altura se ajuste automáticamente */
-    margin-left: 20px;  /* Centra horizontalmente el texto */
+    margin-left: 20px; /* Centra horizontalmente el texto */
     left: 0; /* Cambia la posición izquierda para centrar horizontalmente */
   }
   .psi__woman {

@@ -5,22 +5,23 @@
   font-family: lato, sans-serif;
 }
 
-html,
-body {
+html, body {
   background-image: url("./images/fondo.jpg");
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
+  height: 100%; /* Establece una altura completa para cubrir la pantalla */
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
 }
 
 h1 {
   color: white;
   font-weight: bold;
-  position: absolute;
-  top: 200px;
-  left: 50%; /* Alinear en el centro horizontal */
-  transform: translateX(-50%); /* Alinear en el centro horizontal */
+  font-size: 3rem; /* Ajusta el tamaño de fuente para pantallas grandes */
+  text-align: center; /* Centra el texto horizontalmente */
 }
 
 .app {

@@ -1,34 +1,32 @@
-/* Estilos base para todas las pantallas */
-.servi {
-  position: relative;
-}
+
 
 .servi__title {
   position: absolute;
-  top: 30rem; /* Ajustar la posición vertical para pantallas más grandes */
-  left: 10%; /* Ajustar la posición horizontal para pantallas más grandes */
+  top: 100%; /* Ajustar la posición vertical para pantallas más grandes */
+  left: 25%; /* Ajustar la posición horizontal para pantallas más grandes */
   transition: color 2s;
   text-shadow: 2px 2px 4px #eaffc2;
-  font: bold 3vw cursive; /* Usar un tamaño de fuente relativo */
+  font: bold 4vw cursive; /* Aumentar el tamaño de fuente para pantallas más grandes */
   animation: grow-and-shrink 10s;
   animation-iteration-count: infinite;
   color: #127127;
+  margin-top:30%;
 }
 
 .servi__conteiner {
   position: absolute;
-  top: 10%; /* Ajustar la posición vertical para pantallas más grandes */
+  top: 95%; /* Ajustar la posición vertical para pantallas más grandes */
   left: 10%; /* Ajustar la posición horizontal para pantallas más grandes */
-  
   list-style-type: none;
-  margin-top: 20rem;
-  margin-left: 20rem;
+  margin-top: 60rem;
+  margin-left: 30rem;
+  margin-right: 20rem;
 }
 
 .servi__t {
   transition: color 2s;
   text-shadow: 2px 2px 4px #eaffc2;
-  font: bold 2vw cursive; /* Usar un tamaño de fuente relativo */
+  font: bold 3vw cursive; /* Aumentar el tamaño de fuente para pantallas más grandes */
   text-align: left;
   animation: animTexto 5s;
   color: #127127;
@@ -37,7 +35,7 @@
 .servi-p {
   transition: color 2s;
   text-shadow: 2px 2px 4px #eaffc2;
-  font: 1.5vw cursive; /* Usar un tamaño de fuente relativo */
+  font: 2vw cursive; /* Aumentar el tamaño de fuente para pantallas más grandes */
   text-align: left;
   animation: animTexto 5s;
   color: #1b1b1b;
@@ -85,6 +83,8 @@
     font-size: 120%; /* Ajusta el tamaño de fuente para pantallas de tablet */
   }
 }
+
+/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
   .servi__title {
     font-size: 150%; /* Ajusta el tamaño de fuente para pantallas de tablet */

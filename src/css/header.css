@@ -2,21 +2,21 @@
   position: relative;
   background-image: url("../images/images.jpeg");
   background-size: 100% 100%;
-  height: 300px;
+  height: 400px; /* Aumentar la altura para una pantalla grande */
 }
 
 .psi__logo {
   position: absolute;
-  top: 80px;
-  height: 160px;
-  left: 700px;
+  top: 130px; /* Ajustar la posición vertical para una pantalla grande */
+  height: 170px; /* Ajustar el tamaño para una pantalla grande */
+  left: 62%; /* Centrar horizontalmente */
+  transform: translateX(-50%); /* Centrar horizontalmente */
 }
 
 /* Media query para tablets y celulares */
 @media screen and (max-width: 1280px) {
   .header__app {
-    height
-    : 200px; /* Ajusta la altura para pantallas más pequeñas */
+    height: 200px; /* Ajusta la altura para pantallas más pequeñas */
   }
   .psi__logo {
     top: 60px; /* Ajusta la posición superior para pantallas más pequeñas */
