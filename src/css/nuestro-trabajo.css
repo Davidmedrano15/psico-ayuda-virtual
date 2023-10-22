@@ -1,15 +1,15 @@
+/* Estilos base para todas las pantallas */
 .servi {
   position: relative;
-
-  margin-bottom: 10px;
 }
+
 .servi__title {
   position: absolute;
-  top: 350px;
-  left: 150px;
+  top: 30rem; /* Ajustar la posición vertical para pantallas más grandes */
+  left: 10%; /* Ajustar la posición horizontal para pantallas más grandes */
   transition: color 2s;
   text-shadow: 2px 2px 4px #eaffc2;
-  font: bold 300% cursive;
+  font: bold 3vw cursive; /* Usar un tamaño de fuente relativo */
   animation: grow-and-shrink 10s;
   animation-iteration-count: infinite;
   color: #127127;
@@ -17,36 +17,41 @@
 
 .servi__conteiner {
   position: absolute;
-  top: 350px;
-  left: 600px;
-  right: 100px;
+  top: 10%; /* Ajustar la posición vertical para pantallas más grandes */
+  left: 10%; /* Ajustar la posición horizontal para pantallas más grandes */
+  
   list-style-type: none;
+  margin-top: 20rem;
+  margin-left: 20rem;
 }
+
 .servi__t {
   transition: color 2s;
   text-shadow: 2px 2px 4px #eaffc2;
-  font: bold 150% cursive;
+  font: bold 2vw cursive; /* Usar un tamaño de fuente relativo */
   text-align: left;
   animation: animTexto 5s;
   color: #127127;
 }
+
 .servi-p {
   transition: color 2s;
   text-shadow: 2px 2px 4px #eaffc2;
-  font: 100% cursive;
+  font: 1.5vw cursive; /* Usar un tamaño de fuente relativo */
   text-align: left;
   animation: animTexto 5s;
   color: #1b1b1b;
 }
 
-@keyframes animTexto {
-  from {
-    margin-left: 100%;
-    width: 100%;
+/* Consulta de medios para pantallas más grandes */
+@media (min-width: 1200px) {
+  .servi__title {
+    font: bold 2.5vw cursive; /* Tamaño de fuente para pantallas aún más grandes */
   }
-  to {
-    margin-left: 0%;
-    width: 100%;
+
+  .servi__conteiner {
+    top: 10%; /* Ajustar la posición vertical para pantallas aún más grandes */
+    left: 25%; /* Ajustar la posición horizontal para pantallas aún más grandes */
   }
 }
 
@@ -63,7 +68,7 @@
 }
 
 /* Media query para tablets */
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px) {
   .servi__title {
     font-size: 200%; /* Ajusta el tamaño de fuente para pantallas de tablet */
     top: 350px; /* Ajusta la posición vertical para pantallas de tablet */
