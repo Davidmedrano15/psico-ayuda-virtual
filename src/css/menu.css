@@ -145,6 +145,34 @@
   transition: 0.4s;
 }
 
+@media screen and (max-width: 1280px){
+ 
+  .show-menu {
+    display: block;
+  }
+  .modal-background {
+    width: 50%; /* Ajusta el ancho para pantallas de tablet */
+    height: 600px; /* Permite que la altura se ajuste automáticamente */
+    top: 250px; /* Ajusta la posición vertical para pantallas de tablet */
+    left: 50%; /* Ajusta la posición horizontal para pantallas de tablet */
+    margin-left: 0;
+  }
+
+  .modal__title {
+    font-size: 150%; /* Ajusta el tamaño de fuente para pantallas de tablet */
+    left: 150px;
+  }
+
+  .modal__imagen {
+    top: 80px; /* Ajusta la posición vertical para pantallas de tablet */
+    width:150px;
+  }
+
+  .modal__tex {
+    top: 300px; /* Ajusta la posición vertical para pantallas de tablet */
+    padding: 20px;
+  }
+}
 /* Media query para tablets y celulares */
 @media (max-width: 768px) {
   .nav__ul {

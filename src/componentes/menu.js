@@ -27,10 +27,10 @@ function Menu() {
 
   return (
     <nav className="nav__menu">
-      <div class="menu-button">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <div className="menu-button">
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
       <ul className="nav__ul">
         <li className="nav__li">

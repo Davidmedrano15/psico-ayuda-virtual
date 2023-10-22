@@ -12,7 +12,7 @@
   font: bold 300% cursive;
   animation: grow-and-shrink 10s;
   animation-iteration-count: infinite;
-  color: #006400;
+  color: #127127;
 }
 
 .servi__conteiner {
@@ -28,7 +28,7 @@
   font: bold 150% cursive;
   text-align: left;
   animation: animTexto 5s;
-  color: #006400;
+  color: #127127;
 }
 .servi-p {
   transition: color 2s;
@@ -63,6 +63,23 @@
 }
 
 /* Media query para tablets */
+@media screen and (max-width: 1280px){
+  .servi__title {
+    font-size: 200%; /* Ajusta el tamaño de fuente para pantallas de tablet */
+    top: 350px; /* Ajusta la posición vertical para pantallas de tablet */
+    left: 100px; /* Ajusta la posición horizontal para pantallas de tablet */
+  }
+
+  .servi__conteiner {
+    top: 300px; /* Ajusta la posición vertical para pantallas de tablet */
+    left: 450px; /* Ajusta la posición horizontal para pantallas de tablet */
+    right: 30px; /* Ajusta la posición horizontal para pantallas de tablet */
+  }
+
+  .servi__t {
+    font-size: 120%; /* Ajusta el tamaño de fuente para pantallas de tablet */
+  }
+}
 @media (max-width: 768px) {
   .servi__title {
     font-size: 150%; /* Ajusta el tamaño de fuente para pantallas de tablet */

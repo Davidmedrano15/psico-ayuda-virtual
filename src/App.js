@@ -31,7 +31,6 @@ function App() {
       </header>
       <div>
         <Menu />
-        <div>{Menu}</div>
       </div>
       <div>
         <div>

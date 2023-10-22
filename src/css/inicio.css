@@ -48,16 +48,27 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   .inicio__text {
-    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    margin-left: 20px; /* Centra horizontalmente el texto */
-    left: 0; /* Cambia la posición izquierda para centrar horizontalmente */
+    width: 80%; /* Ocupar todo el ancho de la pantalla */
+    margin-left: 85px; /* Quitar el margen izquierdo */
+    top: 10px; /* Ajustar la posición vertical según tus necesidades */
+    padding-top: 20px; /* Ajustar el espacio superior según tus necesidades */
   }
   .psi__woman {
-    width: 150px; /* Ajusta el ancho para pantallas de tablet */
-    height: 150px; /* Ajusta la altura para pantallas de tablet */
+    display: none; /* Ocultar la imagen en pantallas más pequeñas si es necesario */
+  }
+}
+
+@media (max-width: 768px) {
+  .inicio__text {
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    margin-left: 0; /* Quitar el margen izquierdo */
+    top: 10px; /* Ajustar la posición vertical según tus necesidades */
+    padding-top: 20px; /* Ajustar el espacio superior según tus necesidades */
+  }
+  .psi__woman {
+    display: none; /* Ocultar la imagen en pantallas más pequeñas si es necesario */
   }
 }
 
