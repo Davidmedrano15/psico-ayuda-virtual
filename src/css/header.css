@@ -20,10 +20,10 @@
   }
 
   .psi__logo {
-    top: 50px; /* Ajusta la posición superior para pantallas más pequeñas */
-    height: 120px; /* Ajusta la altura para pantallas más pequeñas */
+    top: 60px; /* Ajusta la posición superior para pantallas más pequeñas */
+    height: 90px; /* Ajusta la altura para pantallas más pequeñas */
     left: 50%; /* Centra horizontalmente el logo */
-    transform: translateX(-50%); /* Centra horizontalmente el logo */
+    transform: translateX(4%); /* Centra horizontalmente el logo */
   }
 }
 
@@ -34,9 +34,9 @@
   }
 
   .psi__logo {
-    top: 30px; /* Ajusta la posición superior para pantallas de celulares */
-    height: 100px; /* Ajusta la altura para pantallas de celulares */
+    top: 50px; /* Ajusta la posición superior para pantallas de celulares */
+    height: 48px; /* Ajusta la altura para pantallas de celulares */
     left: 50%; /* Centra horizontalmente el logo */
-    transform: translateX(-50%); /* Centra horizontalmente el logo */
+    transform: translateX(3%); /* Centra horizontalmente el logo */
   }
 }

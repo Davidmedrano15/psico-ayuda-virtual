@@ -169,4 +169,50 @@
   .show-menu {
     display: block;
   }
+  .modal-background {
+    width: 90%; /* Ajusta el ancho para pantallas de tablet */
+    height: 600px; /* Permite que la altura se ajuste automáticamente */
+    top: 250px; /* Ajusta la posición vertical para pantallas de tablet */
+    left: 50%; /* Ajusta la posición horizontal para pantallas de tablet */
+    margin-left: 0;
+  }
+
+  .modal__title {
+    font-size: 150%; /* Ajusta el tamaño de fuente para pantallas de tablet */
+    left: 150px;
+  }
+
+  .modal__imagen {
+    top: 80px; /* Ajusta la posición vertical para pantallas de tablet */
+    width:150px;
+  }
+
+  .modal__tex {
+    top: 300px; /* Ajusta la posición vertical para pantallas de tablet */
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-background {
+    width: 90%; /* Ajusta el ancho para pantallas de celular */
+    height: 600px; /* Permite que la altura se ajuste automáticamente */
+    top: 200px; /* Ajusta la posición vertical para pantallas de celular */
+    left: 50%; /* Ajusta la posición horizontal para pantallas de celular */
+  }
+
+  .modal__title {
+    font-size: 120%; /* Ajusta el tamaño de fuente para pantallas de celular */
+    left:50px;
+  }
+
+  .modal__imagen {
+    top: 70px; /* Ajusta la posición vertical para pantallas de celular */
+    width:100px;
+  }
+
+  .modal__tex {
+    top: 220px; /* Ajusta la posición vertical para pantallas de celular */
+    padding: 20px;
+  }
 }

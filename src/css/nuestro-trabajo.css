@@ -12,7 +12,7 @@
   font: bold 300% cursive;
   animation: grow-and-shrink 10s;
   animation-iteration-count: infinite;
-  color: #00ff00;
+  color: #006400;
 }
 
 .servi__conteiner {
@@ -28,7 +28,7 @@
   font: bold 150% cursive;
   text-align: left;
   animation: animTexto 5s;
-  color: #00ff00;
+  color: #006400;
 }
 .servi-p {
   transition: color 2s;
