@@ -14,6 +14,9 @@ body {
   justify-content: center;
   /* Centra verticalmente el contenido */
 }
+div {
+  display: block;
+}
 
 h1 {
   color: white;
@@ -25,7 +28,6 @@ h1 {
 .app {
   
   text-align: center;
-  justify-content: space-between;
 }
 
 /* Media query para tablets y celulares */
