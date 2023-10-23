@@ -4,7 +4,7 @@ import woman from "../images/1.png";
 
 function Inicio() {
   return (
-    <div className="inicio">
+    <div className="inicio container">
       <img src={woman} className="psi__woman" alt="Logo De psicologia" />
       <p className="inicio__text">
         Soy Especialista en Salud Mental con experiencia en evaluación, <br />.

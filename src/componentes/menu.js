@@ -26,7 +26,7 @@ function Menu() {
   };
 
   return (
-    <nav className="nav__menu">
+    <nav className="nav__menu container">
       <div className="menu-button">
         <div className="bar"></div>
         <div className="bar"></div>

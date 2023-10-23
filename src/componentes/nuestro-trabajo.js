@@ -3,7 +3,7 @@ import "../css/nuestro-trabajo.css";
 
 function Servicios() {
   return (
-    <div id="Servicios" className="servi">
+    <div id="Servicios" className="servi container">
       {/* Contenido de la sección de Servicios */}
       <h2 className="servi__title">
         ¿Por qué <br />

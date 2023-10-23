@@ -35,23 +35,21 @@
   border-color: #40ff00;
   cursor: pointer;
   user-select: text;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: color 2s;
 }
 
 /* Estilos para el fondo del modal */
 .modal-background {
   position: fixed;
-  top: 200px; /* Ajusta la posición vertical según tus necesidades */
-  left: 50px; /* Ajusta la posición horizontal para pantallas grandes */
+  top: 10%; /* Ajusta la posición vertical para pantallas más grandes */
+  left: 50%; /* Centra el modal horizontalmente */
   transform: translate(-50%, -50%); /* Centra el modal en la pantalla */
   width: 700px; /* Ajusta el ancho para pantallas grandes */
   height: 450px; /* Ajusta la altura para pantallas grandes */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 650px; /* Ajusta el margen izquierdo para pantallas grandes */
-  margin-top: 100px;
   background-color: #84b6f4;
   padding: 50px;
   box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
@@ -63,6 +61,7 @@
   padding: 20px;
   border-radius: 5px;
 }
+
 .modal__title {
   position: absolute;
   top: 20px;
@@ -70,6 +69,7 @@
   text-shadow: 2px 2px 4px #eaffc2;
   font: bold 200% cursive;
 }
+
 .modal__imagen {
   position: absolute;
   top: 80px;
@@ -79,6 +79,7 @@
   -moz-box-shadow: -9px -15px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: -9px -15px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 .modal__tex {
   position: absolute;
   top: 300px;
@@ -87,10 +88,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 25px; /* Bordes redondeados */
-  box-shadow: 13 13 10px rgba(0, 0, 0, 0.2); /* Sombra */
-  text-align: center; /* Centrar texto horizontalmente */
-  line-height: 1.5;
+  border-radius: 25px;
+  box-shadow: 13px 13px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
   font-weight: bold;
   text-shadow: 2px 2px 4px #eaffc2;
   font-size: 16px;
@@ -114,19 +114,21 @@
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+  user-select: none;
   border-radius: 25px;
   margin-top: 10px;
 }
+
 .modal-close-button:hover {
   color: #40ff00;
   border: 1px solid #40ff00;
-  border-radius: 25px;
-  user-select: text;
+  border-radius: 5px;
+  user-select: none;
   cursor: pointer;
-  user-select: text;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 10px;
 }
+
 
 /* Estilos para el botón de menú (visible en pantallas pequeñas) */
 .menu-button {
@@ -221,6 +223,28 @@
 }
 
 @media (max-width: 480px) {
+  .nav__ul {
+    flex-direction: column; /* Cambiar la dirección de los elementos en pantallas pequeñas */
+    gap: 10px; /* Reduzco el espacio entre elementos en pantallas pequeñas */
+  }
+
+  .nav__li {
+    margin-right: 0; /* Elimino el margen derecho en pantallas pequeñas */
+    margin-top: 0; /* Elimino el margen superior en pantallas pequeñas */
+  }
+
+  .a-menu {
+    font-size: 16px; /* Reduzco el tamaño de fuente en pantallas pequeñas si es necesario */
+    padding: 5px 10px; /* Reduzco el padding en pantallas pequeñas si es necesario */
+  }
+
+  /* Mostrar el botón de menú en pantallas pequeñas */
+  .menu-button {
+    display: block;
+  }
+  .show-menu {
+    display: block;
+  }
   .modal-background {
     width: 90%; /* Ajusta el ancho para pantallas de celular */
     height: 600px; /* Permite que la altura se ajuste automáticamente */

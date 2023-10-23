@@ -1,32 +1,30 @@
-
-
 .servi__title {
   position: absolute;
-  top: 100%; /* Ajustar la posición vertical para pantallas más grandes */
-  left: 25%; /* Ajustar la posición horizontal para pantallas más grandes */
+  top: 10%; /* Ajusta la posición vertical para pantallas más grandes */
+  left: 50%; /* Ajusta la posición horizontal para centrar en la pantalla */
+  transform: translateX(-50%); /* Centra horizontalmente */
   transition: color 2s;
   text-shadow: 2px 2px 4px #eaffc2;
-  font: bold 4vw cursive; /* Aumentar el tamaño de fuente para pantallas más grandes */
+  font: bold 3vw cursive; /* Aumenta el tamaño de fuente para pantallas más grandes */
   animation: grow-and-shrink 10s;
   animation-iteration-count: infinite;
   color: #127127;
-  margin-top:30%;
 }
 
 .servi__conteiner {
   position: absolute;
-  top: 95%; /* Ajustar la posición vertical para pantallas más grandes */
-  left: 10%; /* Ajustar la posición horizontal para pantallas más grandes */
+  top: 20%; /* Ajusta la posición vertical para pantallas más grandes */
+  left: 10%; /* Ajusta la posición horizontal para pantallas más grandes */
   list-style-type: none;
-  margin-top: 60rem;
-  margin-left: 30rem;
-  margin-right: 20rem;
+  margin-top: 2rem; /* Ajusta el margen superior */
+  margin-left: 3rem; /* Ajusta el margen izquierdo */
+  margin-right: 2rem; /* Ajusta el margen derecho */
 }
 
 .servi__t {
   transition: color 2s;
   text-shadow: 2px 2px 4px #eaffc2;
-  font: bold 3vw cursive; /* Aumentar el tamaño de fuente para pantallas más grandes */
+  font: bold 3vw cursive; /* Aumenta el tamaño de fuente para pantallas más grandes */
   text-align: left;
   animation: animTexto 5s;
   color: #127127;
@@ -35,7 +33,7 @@
 .servi-p {
   transition: color 2s;
   text-shadow: 2px 2px 4px #eaffc2;
-  font: 2vw cursive; /* Aumentar el tamaño de fuente para pantallas más grandes */
+  font: 2vw cursive; /* Aumenta el tamaño de fuente para pantallas más grandes */
   text-align: left;
   animation: animTexto 5s;
   color: #1b1b1b;
@@ -48,8 +46,8 @@
   }
 
   .servi__conteiner {
-    top: 10%; /* Ajustar la posición vertical para pantallas aún más grandes */
-    left: 25%; /* Ajustar la posición horizontal para pantallas aún más grandes */
+    top: 10%; /* Ajusta la posición vertical para pantallas aún más grandes */
+    left: 25%; /* Ajusta la posición horizontal para pantallas aún más grandes */
   }
 }
 
@@ -66,36 +64,18 @@
 }
 
 /* Media query para tablets */
-@media screen and (max-width: 1280px) {
-  .servi__title {
-    font-size: 200%; /* Ajusta el tamaño de fuente para pantallas de tablet */
-    top: 350px; /* Ajusta la posición vertical para pantallas de tablet */
-    left: 100px; /* Ajusta la posición horizontal para pantallas de tablet */
-  }
-
-  .servi__conteiner {
-    top: 300px; /* Ajusta la posición vertical para pantallas de tablet */
-    left: 450px; /* Ajusta la posición horizontal para pantallas de tablet */
-    right: 30px; /* Ajusta la posición horizontal para pantallas de tablet */
-  }
-
-  .servi__t {
-    font-size: 120%; /* Ajusta el tamaño de fuente para pantallas de tablet */
-  }
-}
-
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .servi__title {
     font-size: 150%; /* Ajusta el tamaño de fuente para pantallas de tablet */
-    top: 250px; /* Ajusta la posición vertical para pantallas de tablet */
-    left: 20px; /* Ajusta la posición horizontal para pantallas de tablet */
+    top: 10%; /* Ajusta la posición vertical para pantallas de tablet */
+    left: 10%; /* Ajusta la posición horizontal para centrar en la pantalla */
+    transform: translateX(-50%); /* Centra horizontalmente */
   }
 
   .servi__conteiner {
-    top: 300px; /* Ajusta la posición vertical para pantallas de tablet */
-    left: 250px; /* Ajusta la posición horizontal para pantallas de tablet */
-    right: 30px; /* Ajusta la posición horizontal para pantallas de tablet */
+    top: 20%; /* Ajusta la posición vertical para pantallas de tablet */
+    left: 10%; /* Ajusta la posición horizontal */
+    right: 10%; /* Ajusta la posición horizontal */
   }
 
   .servi__t {
@@ -107,14 +87,15 @@
 @media (max-width: 480px) {
   .servi__title {
     font-size: 120%; /* Ajusta el tamaño de fuente para pantallas de celular */
-    top: 250px; /* Ajusta la posición vertical para pantallas de celular */
-    left: 100px; /* Ajusta la posición horizontal para pantallas de celular */
+    top: 10%; /* Ajusta la posición vertical para pantallas de celular */
+    left: 10%; /* Ajusta la posición horizontal para centrar en la pantalla */
+    transform: translateX(-50%); /* Centra horizontalmente */
   }
 
   .servi__conteiner {
-    top: 450px; /* Ajusta la posición vertical para pantallas de celular */
-    left: 100px; /* Ajusta la posición horizontal para pantallas de celular */
-    right: 20px; /* Ajusta la posición horizontal para pantallas de celular */
+    top: 20%; /* Ajusta la posición vertical para pantallas de celular */
+    left: 10%; /* Ajusta la posición horizontal */
+    right: 10%; /* Ajusta la posición horizontal */
   }
 
   .servi__t {

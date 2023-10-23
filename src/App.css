@@ -2,19 +2,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: lato, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 html, body {
   background-image: url("./images/fondo.jpg");
   background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  height: 100%; /* Establece una altura completa para cubrir la pantalla */
+  height: 100vh; /* Establece una altura completa para cubrir la pantalla */
   display: flex;
   align-items: center; /* Centra verticalmente el contenido */
   justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.container {
+  width: 90%; /* Ajusta el ancho para adaptarse a la pantalla */
+  max-width: 1200px; /* Establece un ancho máximo para evitar que el contenido sea demasiado ancho en pantallas grandes */
+  margin: 0 auto;
 }
 
 h1 {
@@ -31,17 +34,13 @@ h1 {
 /* Media query para tablets y celulares */
 @media (max-width: 768px) {
   h1 {
-    top: 100px; /* Ajusta la posición para pantallas más pequeñas */
     font-size: 24px; /* Cambia el tamaño de fuente para pantallas más pequeñas si es necesario */
-    left: 50%; /* Alinear en el centro horizontal */
-    transform: translateX(-50%); /* Alinear en el centro horizontal */
   }
 }
 
 /* Media query para celulares */
 @media (max-width: 480px) {
   h1 {
-    top: 50px; /* Ajusta la posición para pantallas de celulares */
     font-size: 20px; /* Cambia el tamaño de fuente para pantallas de celulares si es necesario */
   }
 }

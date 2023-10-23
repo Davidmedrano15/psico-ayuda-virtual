@@ -12,32 +12,26 @@
   top: -100px;
   width: 500px;
   height: 500px;
-  left: 30%; /* Centra horizontalmente en la pantalla */
+  left: 50%; /* Centra horizontalmente en la pantalla */
   transform: translateX(-50%); /* Centra horizontalmente en la pantalla */
-   /* Coloca la imagen detrás del contenido */
 }
 
 .inicio__text {
-  position: absolute; /* Cambia a posición relativa para que los elementos internos se posicionen correctamente */
+  position: absolute;
   left: 50%;
   top: 10%;
-  width: 400px; /* Ajusta el ancho al 100% */ /* Establece un ancho máximo para evitar que el contenido se extienda demasiado en pantallas grandes */
-  padding: 20px; /* Añade un espaciado interno para el contenido */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Agrega un fondo semi-transparente al contenido */
+  width: 90%; /* Ajusta el ancho al 90% del ancho de la pantalla */
+  max-width: 500px; /* Establece un ancho máximo para evitar que el contenido se extienda demasiado en pantallas grandes */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  border-radius: 25px; /* Bordes redondeados */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-  font: bold 2rem cursive; /* Ajusta el tamaño de fuente */
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font: bold 2rem cursive;
   color: #1b1b1b;
   text-shadow: 2px 2px 4px #eaffc2;
-  animation: fade-in 1s; /* Aplicar la animación de desvanecimiento durante 1 segundo */
+  animation: fade-in 1s;
   line-height: 1.5;
- 
 }
 
 @keyframes fade-in {
@@ -57,37 +51,40 @@
 
 @media screen and (max-width: 1280px) {
   .inicio__text {
-    width: 80%; /* Ocupar todo el ancho de la pantalla */
-    margin-left: 85px; /* Quitar el margen izquierdo */
-    top: 10px; /* Ajustar la posición vertical según tus necesidades */
-    padding-top: 20px; /* Ajustar el espacio superior según tus necesidades */
+    width: 90%; /* Ajusta el ancho al 90% del ancho de la pantalla */
+    max-width: 500px; /* Establece un ancho máximo */
+    margin-left: 0;
+    top: 10px;
+    padding-top: 20px;
   }
   .psi__woman {
-    display: none; /* Ocultar la imagen en pantallas más pequeñas si es necesario */
+    display: none; /* Oculta la imagen en pantallas más pequeñas si es necesario */
   }
 }
 
 @media (max-width: 768px) {
   .inicio__text {
-    width: 100%; /* Ocupar todo el ancho de la pantalla */
-    margin-left: 0; /* Quitar el margen izquierdo */
-    top: 10px; /* Ajustar la posición vertical según tus necesidades */
-    padding-top: 20px; /* Ajustar el espacio superior según tus necesidades */
+    width: 90%;
+    max-width: 500px;
+    margin-left: 0;
+    top: 10px;
+    padding-top: 20px;
   }
   .psi__woman {
-    display: none; /* Ocultar la imagen en pantallas más pequeñas si es necesario */
+    display: none;
   }
 }
 
 /* Media query para celulares */
 @media (max-width: 480px) {
   .inicio__text {
-    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
+    width: 90%;
+    max-width: 300px; /* Ajusta el ancho máximo para pantallas de celular */
     height: auto; /* Permite que la altura se ajuste automáticamente */
-    margin-left: 20px; /* Centra horizontalmente el texto */
-    left: 0; /* Cambia la posición izquierda para centrar horizontalmente */
+    margin-left: 0;
+    top: 10px;
   }
   .psi__woman {
-    display: none; /* Oculta el elemento para pantallas de celular si es necesario */
+    display: none;
   }
 }

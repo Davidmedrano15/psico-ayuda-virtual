@@ -1,9 +1,9 @@
-/* UserServiceContent.css */
 /* Estilos base para todas las pantallas */
 .user-content {
   padding: 20px; /* Aumenta el espaciado interno */
-  width: 500px; /* Aumenta el ancho del contenedor */
-  margin: 0px auto; /* Centra el contenedor horizontalmente y agrega espacio en los márgenes superior e inferior */
+  width: 90%; /* Ajusta el ancho del contenedor para adaptarse a la pantalla */
+  max-width: 500px; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas grandes */
+  margin: 0 auto; /* Centra el contenedor horizontalmente y agrega espacio en los márgenes superior e inferior */
   cursor: pointer;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
 }
@@ -19,7 +19,8 @@
 }
 
 .a-user {
-  width: 400px; /* Aumenta el ancho del elemento */
+  width: 90%; /* Ajusta el ancho del elemento para adaptarse a la pantalla */
+  max-width: 400px; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas grandes */
   color: #1b1b1b;
   transition: color 1s;
   display: flex;
@@ -30,8 +31,7 @@
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  margin-top: 60px ; /* Centra horizontalmente y agrega espacio en los márgenes superior e inferior */
-  margin-left: 500px;
+  margin: 20px auto; /* Centra horizontalmente y agrega espacio en los márgenes superior e inferior */
   background-image: url("../images/fondos.jpg");
   text-shadow: 2px 2px 4px #eaffc2;
   transition: all 0.2s;
@@ -40,47 +40,37 @@
 }
 
 .a-user:hover {
-  width: 400px;
+  width: 90%; /* Ajusta el ancho del elemento para adaptarse a la pantalla en el estado de hover */
   color: #40ff00;
   border-color: #40ff00;
   border-radius: 25px;
   user-select: text;
   cursor: pointer;
-  user-select: text;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Media query para tablets */
-@media screen and (max-width: 1280px){
-  .user-content {
-    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
-    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de tablet */
-  }
-  .a-user {
-    width: 50%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
-    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de tablet */
-  }
-}
 @media (max-width: 768px) {
   .user-content {
-    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
-    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de tablet */
+    width: 90%; /* Ajusta el ancho del contenedor para adaptarse a la pantalla de tablet */
+    max-width: 90%; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas de tablet */
   }
+
   .a-user {
-    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
-    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de tablet */
+    width: 90%; /* Ajusta el ancho del elemento para adaptarse a la pantalla de tablet */
+    max-width: 90%; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas de tablet */
   }
 }
 
 /* Media query para celulares */
 @media (max-width: 480px) {
   .user-content {
-    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
-    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de celular */
+    width: 90%; /* Ajusta el ancho del contenedor para adaptarse a la pantalla de celular */
+    max-width: 90%; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas de celular */
   }
+
   .a-user {
-    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
-    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de celular */
+    width: 90%; /* Ajusta el ancho del elemento para adaptarse a la pantalla de celular */
+    max-width: 90%; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas de celular */
   }
 }
