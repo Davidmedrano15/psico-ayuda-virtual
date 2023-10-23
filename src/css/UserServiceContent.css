@@ -1,9 +1,13 @@
-/* Estilos base para todas las pantallas */
+/* UserServiceContent.css */
+.user {
+  padding-right:100px;
+}
 .user-content {
-  padding: 20px; /* Aumenta el espaciado interno */
-  width: 90%; /* Ajusta el ancho del contenedor para adaptarse a la pantalla */
-  max-width: 500px; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas grandes */
-  margin: 0 auto; /* Centra el contenedor horizontalmente y agrega espacio en los márgenes superior e inferior */
+  padding: 10px;
+  width: 400px;
+  margin-left: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
 }
@@ -13,64 +17,69 @@
   color: #127127;
   transition: all 0.2s;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  font: bold 2rem cursive; /* Ajusta el tamaño de fuente */
-  text-align: center; /* Centra el texto horizontalmente */
-  margin-bottom: 10px; /* Agrega espacio en la parte inferior */
+  font: bold 100% cursive;
 }
-
 .a-user {
-  width: 90%; /* Ajusta el ancho del elemento para adaptarse a la pantalla */
-  max-width: 400px; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas grandes */
+  width: 300px;
   color: #1b1b1b;
   transition: color 1s;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 10px; /* Aumenta el espaciado interno */
+  padding: 10px 5px;
   border: 2px solid transparent;
   border-radius: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -8px 10px 5px 0px rgba(199, 199, 199, 1); /* Sombra */
   cursor: pointer;
-  margin: 20px auto; /* Centra horizontalmente y agrega espacio en los márgenes superior e inferior */
-  background-image: url("../images/fondos.jpg");
+  margin-top: 50px;
+  margin-left: 400px;
+  background-color: rgba(173, 216, 230, 0.5); /* Azul pastel con 50% de transparencia */
   text-shadow: 2px 2px 4px #eaffc2;
   transition: all 0.2s;
-  font: bold 2rem cursive; /* Ajusta el tamaño de fuente */
-  text-align: center; /* Centra el texto horizontalmente */
+  font: bold 100% cursive;
 }
 
 .a-user:hover {
-  width: 90%; /* Ajusta el ancho del elemento para adaptarse a la pantalla en el estado de hover */
-  color: #40ff00;
-  border-color: #40ff00;
+  width: 300px;
+  color: #127127;
+  border-color:  #127127;
   border-radius: 25px;
   user-select: text;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  user-select: text;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
 /* Media query para tablets */
+@media screen and (max-width: 1280px) {
+  .user-content {
+    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
+    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de tablet */
+  }
+  .a-user {
+    width: 50%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
+    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de tablet */
+  }
+}
 @media (max-width: 768px) {
   .user-content {
-    width: 90%; /* Ajusta el ancho del contenedor para adaptarse a la pantalla de tablet */
-    max-width: 90%; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas de tablet */
+    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
+    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de tablet */
   }
-
   .a-user {
-    width: 90%; /* Ajusta el ancho del elemento para adaptarse a la pantalla de tablet */
-    max-width: 90%; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas de tablet */
+    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
+    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de tablet */
   }
 }
 
 /* Media query para celulares */
 @media (max-width: 480px) {
   .user-content {
-    width: 90%; /* Ajusta el ancho del contenedor para adaptarse a la pantalla de celular */
-    max-width: 90%; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas de celular */
+    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
+    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de celular */
   }
-
   .a-user {
-    width: 90%; /* Ajusta el ancho del elemento para adaptarse a la pantalla de celular */
-    max-width: 90%; /* Establece un ancho máximo para evitar que el contenido se vuelva demasiado ancho en pantallas de celular */
+    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
+    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de celular */
   }
 }

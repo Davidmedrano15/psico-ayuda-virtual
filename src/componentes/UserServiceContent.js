@@ -3,7 +3,7 @@ import "../css/UserServiceContent.css";
 
 const UserServiceContent = ({ user }) => {
   return (
-    <div className="user container">
+    <div className="user ">
       <div className="user-content">
         {user ? (
           <div className="user-name">

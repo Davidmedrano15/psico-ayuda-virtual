@@ -25,10 +25,11 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className="app expandir">
       <header className="app-header">
         <Header />
       </header>
+      
       <div>
         <Menu />
       </div>

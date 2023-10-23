@@ -1,39 +1,36 @@
-/* Estilos base para todas las pantallas */
 .inicio {
   position: relative;
-  height: 100vh; /* Ajusta la altura al 100% de la altura de la pantalla */
+}
+.psi__woman {
+  position: absolute;
+  top: -150px;
+  width: 300px;
+  height: 300px;
+  left: 50px;
+  z-index: -0;
+}
+.inicio__text {
+  position: absolute;
+  top: 10px;
+  width: 450px;
+  height: 200px;
+  margin-left: 300px;
+  color: #1b1b1b;
+  transition: color 10s;
+  border: 2px solid transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.psi__woman {
-  position: absolute;
-  top: -100px;
-  width: 500px;
-  height: 500px;
-  left: 50%; /* Centra horizontalmente en la pantalla */
-  transform: translateX(-50%); /* Centra horizontalmente en la pantalla */
-}
-
-.inicio__text {
-  position: absolute;
-  left: 50%;
-  top: 10%;
-  width: 90%; /* Ajusta el ancho al 90% del ancho de la pantalla */
-  max-width: 500px; /* Establece un ancho máximo para evitar que el contenido se extienda demasiado en pantallas grandes */
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  border-radius: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  font: bold 2rem cursive;
-  color: #1b1b1b;
-  text-shadow: 2px 2px 4px #eaffc2;
-  animation: fade-in 1s;
+  border-radius: 25px; /* Bordes redondeados */
+  box-shadow: -8px 10px 5px 0px rgba(199,199,199,1);/* Sombra */
+  text-align: center; /* Centrar texto horizontalmente */
+  animation: fade-in 1s; /* Aplicar la animación de desvanecimiento durante 1 segundo */
   line-height: 1.5;
+  background-color: rgba(173, 216, 230, 0.5); /* Azul pastel con 50% de transparencia */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #eaffc2;
+  font: bold 100% cursive;
 }
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -51,40 +48,37 @@
 
 @media screen and (max-width: 1280px) {
   .inicio__text {
-    width: 90%; /* Ajusta el ancho al 90% del ancho de la pantalla */
-    max-width: 500px; /* Establece un ancho máximo */
-    margin-left: 0;
-    top: 10px;
-    padding-top: 20px;
+    width: 80%; /* Ocupar todo el ancho de la pantalla */
+    margin-left: 85px; /* Quitar el margen izquierdo */
+    top: 10px; /* Ajustar la posición vertical según tus necesidades */
+    padding-top: 20px; /* Ajustar el espacio superior según tus necesidades */
   }
   .psi__woman {
-    display: none; /* Oculta la imagen en pantallas más pequeñas si es necesario */
+    display: none; /* Ocultar la imagen en pantallas más pequeñas si es necesario */
   }
 }
 
 @media (max-width: 768px) {
   .inicio__text {
-    width: 90%;
-    max-width: 500px;
-    margin-left: 0;
-    top: 10px;
-    padding-top: 20px;
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    margin-left: 0; /* Quitar el margen izquierdo */
+    top: 10px; /* Ajustar la posición vertical según tus necesidades */
+    padding-top: 20px; /* Ajustar el espacio superior según tus necesidades */
   }
   .psi__woman {
-    display: none;
+    display: none; /* Ocultar la imagen en pantallas más pequeñas si es necesario */
   }
 }
 
 /* Media query para celulares */
 @media (max-width: 480px) {
   .inicio__text {
-    width: 90%;
-    max-width: 300px; /* Ajusta el ancho máximo para pantallas de celular */
+    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
     height: auto; /* Permite que la altura se ajuste automáticamente */
-    margin-left: 0;
-    top: 10px;
+    margin-left: 20px; /* Centra horizontalmente el texto */
+    left: 0; /* Cambia la posición izquierda para centrar horizontalmente */
   }
   .psi__woman {
-    display: none;
+    display: none; /* Oculta el elemento para pantallas de celular si es necesario */
   }
 }

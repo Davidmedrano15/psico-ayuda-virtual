@@ -2,47 +2,43 @@
   position: relative;
   background-image: url("../images/images.jpeg");
   background-size: 100% 100%;
-  height: 400px; /* Altura para pantallas grandes */
+  height: 300px;
+  top: auto;
+  padding:100px;
 }
 
 .psi__logo {
   position: absolute;
-  top: 150px; /* Ajuste de posición vertical para pantallas grandes */
-  height: 200px; /* Tamaño para pantallas grandes */
-  left: 50%; /* Centrar horizontalmente */
-  transform: translateX(-50%); /* Centrar horizontalmente */
+  top: 110px;
+  height: 100px;
+  left: 440px;
 }
+
 
 /* Media query para tablets y celulares */
-@media screen and (max-width: 1280px) {
-  .header__app {
-    height: 200px; /* Altura para pantallas más pequeñas */
-  }
-  .psi__logo {
-    top: 60px; /* Ajuste de posición vertical para pantallas más pequeñas */
-    height: 100px; /* Tamaño para pantallas más pequeñas */
-  }
-}
-
 @media (max-width: 768px) {
   .header__app {
-    height: 200px; /* Altura para pantallas más pequeñas (como tablets) */
+    height: 200px; /* Ajusta la altura para pantallas más pequeñas */
   }
 
   .psi__logo {
-    top: 60px; /* Ajuste de posición vertical para pantallas más pequeñas */
-    height: 100px; /* Tamaño para pantallas más pequeñas */
+    top: 60px; /* Ajusta la posición superior para pantallas más pequeñas */
+    height: 90px; /* Ajusta la altura para pantallas más pequeñas */
+    left: 50%; /* Centra horizontalmente el logo */
+    transform: translateX(4%); /* Centra horizontalmente el logo */
   }
 }
 
 /* Media query para celulares */
 @media (max-width: 480px) {
   .header__app {
-    height: 150px; /* Altura para pantallas de celulares */
+    height: 150px; /* Ajusta la altura para pantallas de celulares */
   }
 
   .psi__logo {
-    top: 50px; /* Ajuste de posición vertical para pantallas de celulares */
-    height: 80px; /* Tamaño para pantallas de celulares */
+    top: 50px; /* Ajusta la posición superior para pantallas de celulares */
+    height: 48px; /* Ajusta la altura para pantallas de celulares */
+    left: 50%; /* Centra horizontalmente el logo */
+    transform: translateX(3%); /* Centra horizontalmente el logo */
   }
 }
