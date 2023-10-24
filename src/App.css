@@ -9,7 +9,7 @@ html,
 body {
   background-image: url("./images/fondo.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 100rem;
   display: flex;
   justify-content: center;
 }
@@ -21,19 +21,14 @@ h1 {
   text-align: center; /* Centra el texto horizontalmente */
 }
 
-.App {
-  min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.contenedor-principal {
-  width: 1200px;
-  margin: 0 auto;
+.app {
+  /* Limita el ancho del contenido para que se vea bien en pantallas grandes */
 }
 
+.contenedor-principal {
+  width:84rem;
+  margin: 0 auto;
+}
 /* Media query para tablets y celulares */
 @media (max-width: 768px) {
   h1 {
