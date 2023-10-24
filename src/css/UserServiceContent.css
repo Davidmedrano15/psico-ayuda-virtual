@@ -1,11 +1,11 @@
 /* UserServiceContent.css */
 .user {
-  padding-right:100px;
+  padding-right: 100px;
 }
 .user-content {
   padding: 10px;
   width: 400px;
-  margin-left: 350px;
+  margin-left: 650px;
   margin-top: 20px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -20,6 +20,8 @@
   font: bold 100% cursive;
 }
 .a-user {
+  
+  font: bold 100% cursive;
   width: 300px;
   color: #1b1b1b;
   transition: color 1s;
@@ -32,17 +34,23 @@
   box-shadow: -8px 10px 5px 0px rgba(199, 199, 199, 1); /* Sombra */
   cursor: pointer;
   margin-top: 50px;
-  margin-left: 400px;
-  background-color: rgba(173, 216, 230, 0.5); /* Azul pastel con 50% de transparencia */
+  margin-left: 650px;
+  background-color: rgba(
+    173,
+    216,
+    230,
+    0.5
+  ); /* Azul pastel con 50% de transparencia */
   text-shadow: 2px 2px 4px #eaffc2;
   transition: all 0.2s;
-  font: bold 100% cursive;
 }
 
 .a-user:hover {
+  
+  font: bold 100% cursive;
   width: 300px;
   color: #127127;
-  border-color:  #127127;
+  border-color: #127127;
   border-radius: 25px;
   user-select: text;
   cursor: pointer;
@@ -51,16 +59,6 @@
 }
 
 /* Media query para tablets */
-@media screen and (max-width: 1280px) {
-  .user-content {
-    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
-    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de tablet */
-  }
-  .a-user {
-    width: 50%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */
-    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de tablet */
-  }
-}
 @media (max-width: 768px) {
   .user-content {
     width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de tablet */

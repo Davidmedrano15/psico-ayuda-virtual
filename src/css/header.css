@@ -4,17 +4,17 @@
   background-size: 100% 100%;
   height: 300px;
   top: auto;
-  padding:100px;
+  padding: 100px;
 }
 
 .psi__logo {
   position: absolute;
-  top: 110px;
-  height: 100px;
-  left: 440px;
+  top: 90px;
+  height: 150px;
+  left: 710px;
 }
 
-
+/* Media query para pantallas pequeñas */
 /* Media query para tablets y celulares */
 @media (max-width: 768px) {
   .header__app {
@@ -22,10 +22,10 @@
   }
 
   .psi__logo {
-    top: 60px; /* Ajusta la posición superior para pantallas más pequeñas */
-    height: 90px; /* Ajusta la altura para pantallas más pequeñas */
-    left: 50%; /* Centra horizontalmente el logo */
-    transform: translateX(4%); /* Centra horizontalmente el logo */
+    top: 50px; /* Ajusta la posición superior para pantallas más pequeñas */
+    height: 120px; /* Ajusta la altura para pantallas más pequeñas */
+    left: 60%; /* Centra horizontalmente el logo */
+    transform: translateX(-50%); /* Centra horizontalmente el logo */
   }
 }
 
@@ -36,9 +36,9 @@
   }
 
   .psi__logo {
-    top: 50px; /* Ajusta la posición superior para pantallas de celulares */
-    height: 48px; /* Ajusta la altura para pantallas de celulares */
-    left: 50%; /* Centra horizontalmente el logo */
-    transform: translateX(3%); /* Centra horizontalmente el logo */
+    top: 55px; /* Ajusta la posición superior para pantallas de celulares */
+    height: 100px; /* Ajusta la altura para pantallas de celulares */
+    left: 60%; /* Centra horizontalmente el logo */
+    transform: translateX(-50%); /* Centra horizontalmente el logo */
   }
 }

@@ -20,25 +20,21 @@ h1 {
   font-size: 3rem; /* Ajusta el tamaño de fuente para pantallas grandes */
   text-align: center; /* Centra el texto horizontalmente */
 }
-
 .app {
   /* Limita el ancho del contenido para que se vea bien en pantallas grandes */
 }
 
 .contenedor-principal {
-  width:84rem;
+  width: 84rem;
   margin: 0 auto;
 }
-/* Media query para tablets y celulares */
+/* Consulta de medios para pantallas de 768px o menos (tablets y celulares) */
 @media (max-width: 768px) {
   h1 {
-    font-size: 24px; /* Cambia el tamaño de fuente para pantallas más pequeñas si es necesario */
+    font-size: 2rem; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
   }
-}
 
-/* Media query para celulares */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 20px; /* Cambia el tamaño de fuente para pantallas de celulares si es necesario */
+  .contenedor-principal {
+    width: 27rem;
   }
 }

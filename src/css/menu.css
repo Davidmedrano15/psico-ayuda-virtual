@@ -2,7 +2,9 @@
 .nav__menu {
   background-color: transparent;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 40px;
+  height: 48px;
+  margin-left: 255px;
+  margin-right: 255px;
 }
 
 .nav__ul {
@@ -15,7 +17,7 @@
 
 .nav__li {
   margin-right: 20px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .a-menu {
@@ -52,7 +54,12 @@
   align-items: center;
   margin-left: 450px;
   margin-top: 100px;
-  background-color: rgba(173, 216, 230, 0.7); /* Azul pastel con 50% de transparencia */
+  background-color: rgba(
+    173,
+    216,
+    230,
+    0.7
+  ); /* Azul pastel con 50% de transparencia */
   padding: 20px;
   box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
@@ -103,8 +110,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background-image: url("../images/fondos.jpg");
-  background: cover;
+  background-color: #127127;
   text-shadow: 2px 2px 4px #eaffc2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: color 1s;
@@ -129,49 +135,7 @@
 }
 
 /* Estilos para el botón de menú (visible en pantallas pequeñas) */
-.menu-button {
-  display: none; /* Ocultar el botón de menú por defecto */
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
 
-.bar {
-  width: 30px;
-  height: 3px;
-  background-color: #1b1b1b;
-  margin: 4px 0;
-  transition: 0.4s;
-}
-
-@media screen and (max-width: 1280px) {
-  .show-menu {
-    display: block;
-  }
-  .modal-background {
-    width: 50%; /* Ajusta el ancho para pantallas de tablet */
-    height: 600px; /* Permite que la altura se ajuste automáticamente */
-    top: 250px; /* Ajusta la posición vertical para pantallas de tablet */
-    left: 50%; /* Ajusta la posición horizontal para pantallas de tablet */
-    margin-left: 0;
-  }
-
-  .modal__title {
-    font-size: 150%; /* Ajusta el tamaño de fuente para pantallas de tablet */
-    left: 150px;
-  }
-
-  .modal__imagen {
-    top: 80px; /* Ajusta la posición vertical para pantallas de tablet */
-    width: 150px;
-  }
-
-  .modal__tex {
-    top: 300px; /* Ajusta la posición vertical para pantallas de tablet */
-    padding: 20px;
-  }
-}
 /* Media query para tablets y celulares */
 @media (max-width: 768px) {
   .nav__ul {
@@ -193,53 +157,120 @@
   .menu-button {
     display: block;
   }
-  .show-menu {
-    display: block;
-  }
   .modal-background {
     width: 90%; /* Ajusta el ancho para pantallas de tablet */
-    height: 600px; /* Permite que la altura se ajuste automáticamente */
-    top: 250px; /* Ajusta la posición vertical para pantallas de tablet */
-    left: 50%; /* Ajusta la posición horizontal para pantallas de tablet */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    top: 150px; /* Ajusta la posición vertical para pantallas de tablet */
+    left: 50px; /* Ajusta la posición horizontal para pantallas de tablet */
     margin-left: 0;
   }
 
   .modal__title {
     font-size: 150%; /* Ajusta el tamaño de fuente para pantallas de tablet */
-    left: 150px;
   }
 
   .modal__imagen {
-    top: 80px; /* Ajusta la posición vertical para pantallas de tablet */
-    width: 150px;
+    margin-top: 30px; /* Ajusta la posición vertical para pantallas de tablet */
+    width: 105px;
   }
 
   .modal__tex {
-    top: 300px; /* Ajusta la posición vertical para pantallas de tablet */
-    padding: 20px;
+    margin-top: 90px; /* Ajusta la posición vertical para pantallas de tablet */
   }
 }
 
+/* Media query para celulares */
 @media (max-width: 480px) {
+  .menu-button {
+    cursor: pointer;
+    position: fixed; /* Fija la posición del botón */
+    top: 10px; /* Ajusta la posición vertical según tus necesidades */
+    left: 10px; /* Ajusta la posición horizontal según tus necesidades */
+    background: none; /* Elimina el fondo del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 0; /* Elimina el relleno del botón */
+    z-index: 999; /* Asegura que el botón esté por encima del contenido */
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #1b1b1b;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  .nav__ul {
+    display: none; /* Ocupa toda la altura de la pantalla */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos internos verticalmente */
+    align-items: center; /* Alinea los elementos horizontalmente al centro */
+    gap: 20px; /* Espaciado entre elementos internos */
+  }
+  .nav__menu.open {
+    transform: translateX(0); /* Desplaza el menú a su posición original */
+  }
+  .open .nav__ul {
+    display: block; /* Muestra el menú cuando está abierto */
+  }
+  .nav__menu {
+    position: fixed;
+    background-color: rgba(
+      173,
+      216,
+      230,
+      1
+    ); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 308px;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 55px;
+    padding: 25px;
+    margin-top: 10px;
+    z-index: 100;
+    transform: translateX(
+      -100%
+    ); /* Inicialmente, desplaza el menú fuera de la pantalla */
+    transition: transform 0.3s; /* Agrega una transición suave para la animación */
+    display: flex; /* Aplica flexbox para alinear elementos internos */
+    flex-direction: column; /* Alinea los elementos internos verticalmente */
+  }
+
   .modal-background {
     width: 90%; /* Ajusta el ancho para pantallas de celular */
-    height: 600px; /* Permite que la altura se ajuste automáticamente */
-    top: 200px; /* Ajusta la posición vertical para pantallas de celular */
-    left: 50%; /* Ajusta la posición horizontal para pantallas de celular */
+    height: 130px; /* Permite que la altura se ajuste automáticamente */
+    top: 190px; /* Ajusta la posición vertical para pantallas de celular */
+    left: 65px; /* Ajusta la posición horizontal para pantallas de celular */
+    position: fixed;
+    transform: translate(-50%, -50%); /* Centra el modal en la pantalla */
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+    background-color: rgba(
+      173,
+      216,
+      230,
+      0.7
+    ); /* Azul pastel con 50% de transparencia */
+    padding: 20px;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
   }
 
   .modal__title {
     font-size: 120%; /* Ajusta el tamaño de fuente para pantallas de celular */
-    left: 50px;
   }
 
   .modal__imagen {
-    top: 70px; /* Ajusta la posición vertical para pantallas de celular */
-    width: 100px;
+    margin-top: 0; /* Ajusta la posición vertical para pantallas de tablet */
+    width: 105px;
   }
 
   .modal__tex {
-    top: 220px; /* Ajusta la posición vertical para pantallas de celular */
-    padding: 20px;
+    top: 140px; /* Ajusta la posición vertical para pantallas de celular */
   }
 }
