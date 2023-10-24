@@ -5,7 +5,7 @@ import Inicio from "./componentes/inicio";
 import UserServiceContent from "./componentes/UserServiceContent";
 import Servicios from "./componentes/nuestro-trabajo";
 import React, { useState } from "react";
-import 'normalize.css';
+import "normalize.css";
 
 function App() {
   const [selectedUser, setSelectedUser] = useState(null);
@@ -29,7 +29,7 @@ function App() {
       <header className="app-header ">
         <Header />
       </header>
-      
+
       <div>
         <Menu />
       </div>
