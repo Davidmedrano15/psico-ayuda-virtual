@@ -25,8 +25,8 @@ function App() {
   };
 
   return (
-    <div className="app expandir">
-      <header className="app-header">
+    <div className="app contenedor-principal">
+      <header className="app-header ">
         <Header />
       </header>
       

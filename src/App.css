@@ -12,10 +12,6 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  /* Centra verticalmente el contenido */
-}
-div {
-  display: block;
 }
 
 h1 {
@@ -25,9 +21,17 @@ h1 {
   text-align: center; /* Centra el texto horizontalmente */
 }
 
-.app {
-  
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+.contenedor-principal {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /* Media query para tablets y celulares */
