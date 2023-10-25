@@ -190,6 +190,8 @@
     border: none; /* Elimina el borde del botón */
     padding: 0; /* Elimina el relleno del botón */
     z-index: 999; /* Asegura que el botón esté por encima del contenido */
+    width: 30px;
+    height: 24px;
   }
 
   .bar {
@@ -199,14 +201,42 @@
     margin: 4px 0;
     transition: 0.4s;
   }
+  .nav__li {
+    padding: 50px;
+  }
+  .a-menu {
+    padding: 40px;
+    text-decoration: none;
+    color: #1b1b1b;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    transition: all 0.2s;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    font: bold 130% cursive;
+    margin: 20px;
+  }
+  .a-menu:hover {
+    background-color: #fff;
+    color: #127127;
+    border-color: #127127;
+    cursor: pointer;
+    user-select: text;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: color 2s;
+  }
   .nav__ul {
     display: none; /* Ocupa toda la altura de la pantalla */
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column; /* Alinea los elementos internos verticalmente */
     align-items: center; /* Alinea los elementos horizontalmente al centro */
-    gap: 20px; /* Espaciado entre elementos internos */
+    gap: 80px; /* Espaciado entre elementos internos */
+    background-image: url("../images/arbol.png");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: -198px 0 ;
+    padding: 10px;
+
+    z-index: 1;
   }
   .nav__menu.open {
     transform: translateX(0); /* Desplaza el menú a su posición original */
@@ -216,26 +246,22 @@
   }
   .nav__menu {
     position: fixed;
-    background-color: rgba(
-      173,
-      216,
-      230,
-      1
-    ); 
+    top: 0;
+    background-color: rgba(173, 216, 230, 1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 308px;
-    width: 100%;
+    height: 100%;
+    width: 70%;
     margin-left: 5px;
-    margin-right: 55px;
     padding: 25px;
-    margin-top: 10px;
     z-index: 100;
     transform: translateX(
       -100%
     ); /* Inicialmente, desplaza el menú fuera de la pantalla */
     transition: transform 0.3s; /* Agrega una transición suave para la animación */
-    display: flex; /* Aplica flexbox para alinear elementos internos */
-    flex-direction: column; /* Alinea los elementos internos verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .modal-background {

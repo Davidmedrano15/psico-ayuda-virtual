@@ -74,10 +74,11 @@
 @media (max-width: 480px) {
   .user-content {
     width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
-    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de celular */
+    margin: 20px 80px; /* Centra horizontalmente y espaciamiento vertical en pantallas de celular */
+
   }
   .a-user {
-    width: 90%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
-    margin: 20px auto; /* Centra horizontalmente y espaciamiento vertical en pantallas de celular */
+    width: 50%; /* Ajusta el ancho para adaptarse a la pantalla de celular */
+    margin: 20px 130px; /* Centra horizontalmente y espaciamiento vertical en pantallas de celular */
   }
 }

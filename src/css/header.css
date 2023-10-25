@@ -36,9 +36,9 @@
   }
 
   .psi__logo {
-    top: 55px; /* Ajusta la posición superior para pantallas de celulares */
-    height: 100px; /* Ajusta la altura para pantallas de celulares */
-    left: 60%; /* Centra horizontalmente el logo */
+    top: 75px; /* Ajusta la posición superior para pantallas de celulares */
+    height: 55px; /* Ajusta la altura para pantallas de celulares */
+    left: 62%; /* Centra horizontalmente el logo */
     transform: translateX(-50%); /* Centra horizontalmente el logo */
   }
 }

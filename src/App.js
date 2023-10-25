@@ -8,8 +8,6 @@ import React, { useState } from "react";
 import "normalize.css";
 
 function App() {
-  
-
   const [selectedUser, setSelectedUser] = useState(null);
 
   const users = [
@@ -50,6 +48,7 @@ function App() {
         </div>
       </div>
       <Inicio />
+
       <Servicios />
     </div>
   );

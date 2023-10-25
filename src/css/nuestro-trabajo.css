@@ -6,7 +6,7 @@
 .servi__title {
   position: absolute;
   top: 350px;
-  left: 80px;
+  left: 250px;
   transition: color 2s;
   text-shadow: 2px 2px 4px #eaffc2;
   font: bold 150% cursive;
@@ -18,7 +18,7 @@
 .servi__conteiner {
   position: absolute;
   top: 280px;
-  left: 400px;
+  left: 700px;
   right: 100px;
   list-style-type: none;
 }
@@ -86,13 +86,13 @@
 @media (max-width: 480px) {
   .servi__title {
     font-size: 120%; /* Ajusta el tamaño de fuente para pantallas de celular */
-    top: 100px; /* Ajusta la posición vertical para pantallas de celular */
-    left: 20px; /* Ajusta la posición horizontal para pantallas de celular */
+    top: 250px; /* Ajusta la posición vertical para pantallas de celular */
+    left: 90px; /* Ajusta la posición horizontal para pantallas de celular */
   }
   
   .servi__conteiner {
-    top: 200px; /* Ajusta la posición vertical para pantallas de celular */
-    left: 20px; /* Ajusta la posición horizontal para pantallas de celular */
+    top: 460px; /* Ajusta la posición vertical para pantallas de celular */
+    left: 130px; /* Ajusta la posición horizontal para pantallas de celular */
     right: 20px; /* Ajusta la posición horizontal para pantallas de celular */
   }
   
