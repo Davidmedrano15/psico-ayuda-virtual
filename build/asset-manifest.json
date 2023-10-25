@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/psico-ayuda-virtual/static/css/main.783197e6.css",
+    "main.js": "/psico-ayuda-virtual/static/js/main.402e7bd4.js",
+    "static/js/787.c4a114db.chunk.js": "/psico-ayuda-virtual/static/js/787.c4a114db.chunk.js",
+    "static/media/fondo.jpg": "/psico-ayuda-virtual/static/media/fondo.ca934129dd01bced782a.jpg",
+    "static/media/1.png": "/psico-ayuda-virtual/static/media/1.c5b5b952dc36a97c0f1d.png",
+    "static/media/andrea.jpg": "/psico-ayuda-virtual/static/media/andrea.3df70d4c4d5706034849.jpg",
+    "static/media/logo1.png": "/psico-ayuda-virtual/static/media/logo1.a2acd375e97fc3654455.png",
+    "static/media/images.jpeg": "/psico-ayuda-virtual/static/media/images.85191386eedeea34913f.jpeg",
+    "index.html": "/psico-ayuda-virtual/index.html",
+    "main.783197e6.css.map": "/psico-ayuda-virtual/static/css/main.783197e6.css.map",
+    "main.402e7bd4.js.map": "/psico-ayuda-virtual/static/js/main.402e7bd4.js.map",
+    "787.c4a114db.chunk.js.map": "/psico-ayuda-virtual/static/js/787.c4a114db.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.783197e6.css",
+    "static/js/main.402e7bd4.js"
+  ]
+}
